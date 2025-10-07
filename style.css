@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0a2463, #1e3c8b, #3a5fc9);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #e0f7fa;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #80deea;
+}
+
+.separator {
+    height: 3px;
+    background: linear-gradient(to right, transparent, #80deea, transparent);
+    width: 60%;
+    margin: 0 auto 30px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.image-section {
+    flex: 0 0 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.character-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.character-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.image-caption {
+    margin-top: 15px;
+    text-align: right;
+    font-style: italic;
+    color: #e0f7fa;
+    max-width: 350px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid #80deea;
+}
+
+.info-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.archon-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4fc3f7;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #e3f2fd;
+    text-align: justify;
+}
+
+.social-links {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.social-links li {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(8px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-links i {
+    margin-right: 12px;
+    font-size: 1.4rem;
+    width: 25px;
+    text-align: center;
+}
+
+.instagram { 
+    color: #e4405f; 
+}
+
+.tiktok { 
+    color: #69c9d0; 
+}
+
+.spotify { 
+    color: #1db954; 
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #b3e5fc;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .image-section {
+        align-items: center;
+        flex: 0 0 auto;
+    }
+    
+    .image-caption {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    .character-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .social-links a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    
+    .character-image {
+        max-width: 280px;
+    }
+    
+    .image-section {
+        flex: 0 0 auto;
+    }
+}
